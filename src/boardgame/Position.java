@@ -4,12 +4,16 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 @AllArgsConstructor
 public class Position {
 
+    @Getter
+    @Setter
     private Integer row;
+
+    @Getter
+    @Setter
     private Integer column;
 
     @Override
