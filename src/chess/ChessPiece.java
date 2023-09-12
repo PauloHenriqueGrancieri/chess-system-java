@@ -4,7 +4,7 @@ import lombok.Getter;
 import src.boardgame.Board;
 import src.boardgame.Piece;
 
-public class ChessPiece extends Piece {
+public abstract class ChessPiece extends Piece {
 
     @Getter
     private Color color;
