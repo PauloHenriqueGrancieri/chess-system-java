@@ -10,9 +10,19 @@ public abstract class ChessPiece extends Piece {
     @Getter
     private Color color;
 
+    @Getter
+    private Integer moveCount;
+
     public ChessPiece(Board board, Color color) {
         super(board);
         this.color = color;
+    }
+
+    public void increaseMoveCount(){
+        moveCount++;
+    }
+    public void decreaseMoveCount(){
+        moveCount--;
     }
 
     public ChessPosition getChessPosition(){
